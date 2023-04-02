@@ -1,0 +1,18 @@
+{
+	"printWidth": 100,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"bracketSpacing": true,
+	"arrowParens": "avoid",
+	"proseWrap": "always",
+	"prettier.disableLanguages": [
+		"javascript",
+		"javascriptreact"
+	],
+	"prettier.useTabs": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

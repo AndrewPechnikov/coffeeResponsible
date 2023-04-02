@@ -1,0 +1,369 @@
+input,
+textarea {
+	outline: none;
+}
+
+button {
+	border-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+body {
+	margin: 0;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+	font-weight: 400;
+	color: white;
+}
+
+body {
+	font-family: "Old Standard TT", serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 16px;
+
+	@media screen and (max-width: 960px) {
+		font-size: 15px;
+	}
+
+	@media screen and (max-width: 760px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 13px;
+	}
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	&__flex {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 960px) {
+		max-width: 760px;
+	}
+
+	@media screen and (max-width: 760px) {
+		max-width: 480px;
+	}
+
+	@media screen and (max-width: 320px) {
+		max-width: 320px;
+	}
+}
+
+.hero {
+	background-image: url("/img/d0782509c27083286ddbc9f382b16b00.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 400px;
+	padding-bottom: 350px;
+	text-align: center;
+
+	&__title {
+		color: white;
+		font-size: 5rem;
+		letter-spacing: 40px;
+
+		font-weight: 200;
+		margin-bottom: 20px;
+	}
+
+	&__title-the {
+		font-size: 2rem;
+		font-style: italic;
+		letter-spacing: 5px;
+		line-height: 0px;
+	}
+
+	&__description {
+		// color: white;
+		// letter-spacing: 7px;
+	}
+
+	&__pagination {
+	}
+}
+
+.story {
+	background-color: #1c2723;
+	text-align: center;
+	padding-top: 50px;
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__description {
+		margin-bottom: 30px;
+	}
+
+	&__button-and-background {
+		background-image: url("/img/1662143738_18-gamerwall-pro-p-yagodi-kofeinogo-dereva-krasivo-25.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 300px;
+		background-position: 0px 25px;
+	}
+}
+
+.description--transperent-italy {
+	display: block;
+	padding-top: 10px;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.5);
+}
+.enviroment {
+	display: flex;
+	gap: 5vh;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+
+	&__image {
+		height: 75px;
+		width: 75px;
+		border-radius: 50%;
+		margin-bottom: 10px;
+	}
+}
+
+.button {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: #1c2723 solid 5px;
+	font-size: 2rem;
+	background-color: #4e6c24;
+}
+
+.taste-coffee {
+	font-family: Roboto;
+	background-color: #26362b;
+
+	&__flex-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__cup-of-coffee {
+		position: relative;
+		top: -50px;
+		height: 250px;
+		margin-right: 25px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__title {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	&__description {
+		color: rgba(255, 255, 255, 0.5);
+		margin-bottom: 10px;
+		width: 400px;
+	}
+
+	&__button {
+		background-color: transparent;
+		border: white solid 1px;
+		color: white;
+		border-radius: 10px;
+		padding: 10px;
+		width: 200px;
+	}
+
+	@media screen and (max-width: 960px) {
+		&__flex-container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__cup-of-coffee {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__container {
+			align-items: center;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.title-decoration {
+	&:after {
+		display: inline-block;
+		margin: 0 0 8px 20px;
+		height: 3px;
+		content: " ";
+		text-shadow: none;
+		background-color: #999;
+		width: 15%;
+	}
+
+	&:before {
+		display: inline-block;
+		margin: 0 20px 8px 0;
+		height: 3px;
+		content: " ";
+		text-shadow: none;
+		background-color: #999;
+		width: 15%;
+	}
+}
+.fermer {
+	background-color: #1c2723;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__service {
+		padding-top: 75px;
+		align-items: center;
+		padding-bottom: 75px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__description {
+		text-align: center;
+		color: rgba(255, 255, 255, 0.5);
+		font-style: italic;
+	}
+
+	&__description--supstring {
+		font-style: normal;
+	}
+
+	&__img {
+		width: 50%;
+	}
+
+	&__button-more {
+		position: relative;
+		left: 25px;
+		font-size: 1.5rem;
+	}
+
+	@media screen and (max-width: 760px) {
+		&__service {
+			padding-top: 0px;
+			align-items: center;
+			padding-bottom: 0px;
+		}
+	}
+}
+.plantations {
+	background-color: #26362b;
+	padding-bottom: 50px;
+
+	&__button-more {
+		position: relative;
+		top: -25px;
+		left: calc(50% - 25px);
+	}
+
+	&__background-image {
+		height: 300px;
+		background-image: url(/img/S11_H1.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	&__description {
+		text-align: center;
+	}
+}
+.grading {
+	background-color: #1c2723;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	&__img {
+		width: 50%;
+	}
+
+	&__button-more {
+		position: relative;
+		left: -25px;
+	}
+
+	&__description {
+		padding: 30px;
+		text-align: center;
+	}
+
+	&__methods {
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	&__method {
+		img {
+			height: 75px;
+			width: 75px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+	}
+}
